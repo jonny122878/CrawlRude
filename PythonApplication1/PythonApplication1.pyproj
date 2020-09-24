@@ -24,6 +24,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Adapter\APP.py" />
+    <Compile Include="Adapter\SeleniumWeb.py" />
+    <Compile Include="Adapter\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Crawl\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -63,6 +68,7 @@
   <ItemGroup>
     <Folder Include="IO\" />
     <Folder Include="Crawl\" />
+    <Folder Include="Adapter\" />
     <Folder Include="Page\" />
     <Folder Include="Filter\" />
   </ItemGroup>

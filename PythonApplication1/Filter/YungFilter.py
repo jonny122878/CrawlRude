@@ -1,6 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import sys
+sys.path.append('./Adapter')
+from Adapter.SeleniumWeb import *
 def DriverFilter(driver):
 
     time.sleep(10)  
@@ -9,4 +12,6 @@ def DriverFilter(driver):
     time.sleep(2) 
     driver.find_element_by_xpath("//input[@index=9]").click()
     driver.find_element_by_class_name('search-text-query').click()
+
+
 
