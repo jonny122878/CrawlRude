@@ -43,6 +43,15 @@
     <Compile Include="IO\YungChorme.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Map\MapFloor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Map\MapWebUrl.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Map\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Page\__init__.py">
       <SubType>Code</SubType>
     </Compile>
