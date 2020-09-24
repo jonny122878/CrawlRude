@@ -14,7 +14,7 @@ from IO.YungChorme import *
 from Filter.YungFilter import *
 from Page.YungPage import *
 from YungData import *
-
+from Page.YungPage import *
 
 #要多二個變數.讀取網頁的網址和跑測試頁
 ouputFile = 'D:/蔡礎謙/CloudStation/溝通格式Excel樣本/網頁匯整.xlsx'
@@ -26,12 +26,12 @@ driver = YungDriver()
 DriverFilter(driver)
 houses = GetHouse()
 time.sleep(10)
-soup=BeautifulSoup(driver.page_source,'html.parser')     
-finalPage= soup.find('a',attrs={'ga_label':'buy_page_last'})
-if finalPage.get('href')!="":
-   page=int(finalPage.get('href').split("pg=",1)[1])#總頁數
-page =1
-
+#soup=BeautifulSoup(driver.page_source,'html.parser')     
+#finalPage= soup.find('a',attrs={'ga_label':'buy_page_last'})
+#if finalPage.get('href')!="":
+#   page=int(finalPage.get('href').split("pg=",1)[1])#總頁數
+#page =1
+page = YungPage(driver)
 
 houses = YungRude(driver,page,houses)
 StuffATableToExcel(houses,sheet,ouputFile)

@@ -69,6 +69,7 @@
     <Folder Include="IO\" />
     <Folder Include="Crawl\" />
     <Folder Include="Adapter\" />
+    <Folder Include="Map\" />
     <Folder Include="Page\" />
     <Folder Include="Filter\" />
   </ItemGroup>
