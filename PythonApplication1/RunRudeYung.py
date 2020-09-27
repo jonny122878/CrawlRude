@@ -20,6 +20,8 @@ from Map.MapFloor import *
 #要多二個變數.讀取網頁的網址和跑測試頁
 ouputFile = 'D:/蔡礎謙/CloudStation/溝通格式Excel樣本/網頁匯整.xlsx'
 sheet = '永慶'
+
+#用zip將結果給整併
 #drivers = [YungDriver(),Rent591Driver()]
 #houses = [GetHouse(),GetHouse()]
 
